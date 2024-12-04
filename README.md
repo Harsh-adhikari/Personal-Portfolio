@@ -54,4 +54,4 @@ This is my personal portfolio website created using HTML, CSS, and JavaScript.
 
 ## Usage
 Clone this repository and open `index.html` in your browser.
->>>>>>> 9ccc8b95f6f942f707e72f2266e5d479dbe37488
+
