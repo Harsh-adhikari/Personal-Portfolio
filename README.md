@@ -17,6 +17,10 @@ Clone this repository and open `index.html` in your browser.
 
 Today, I created a **Skills and Tools** slider for my portfolio, showcasing the technologies and tools I am proficient in. 
 
+# Adding Some New Feature
+- slider
+- Title
+  
 ### Skills:
 - HTML
 - CSS
@@ -50,4 +54,8 @@ This is my personal portfolio website created using HTML, CSS, and JavaScript.
 
 ## Usage
 Clone this repository and open `index.html` in your browser.
->>>>>>> 9ccc8b95f6f942f707e72f2266e5d479dbe37488
+
+## Adding some basic thing
+-- Ai Generated background
+-- Adding google form in button
+
