@@ -284,7 +284,7 @@ img {
     align-items: center;
     justify-content: space-between; /* Space between text and image */
     height: 100vh;
-    background: linear-gradient(to bottom right, #cba3f3, #3460f1);
+    background: linear-gradient(to bottom right, #ac8bce, #2553ea);
     padding: 0 5%;
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
