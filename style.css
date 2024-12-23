@@ -224,11 +224,7 @@ img {
     bottom: 0px;
 }
 
-#one {
-    background-image: url(./img/one.png);
-    background-size: cover;
-    background-position: top center;
-}
+
 
 #one .one {
     max-width: 1200px;
@@ -282,6 +278,72 @@ img {
     animation-delay: 3s;
 }
 
+#one {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and image */
+    height: 100vh;
+    background: linear-gradient(to bottom right, #cba3f3, #3460f1);
+    padding: 0 5%;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Content Styling */
+.content {
+    z-index: 1;
+    flex: 1; /* Allow content to grow and fill available space */
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 30vw;  /* Set width to 30% of viewport width for better responsiveness */
+    height: 30vw; /* Keep the height proportional to width */
+    max-width: 323px; /* Ensure it doesn't grow too large */
+    max-height: 331px; /* Keep the height consistent with the original size */
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 48%;
+    right: 11%; /* Move image slightly left on smaller screens */
+    transform: translateY(-50%);
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    #one {
+        flex-direction: column; /* Stack content and image vertically on smaller screens */
+        align-items: center; /* Center-align text and image */
+        justify-content: center;
+    }
+
+    .profile-img {
+        width: 50vw;  /* Adjust the size to be 50% of the viewport width */
+        height: 50vw; /* Ensure proportional scaling */
+        max-width: 200px; /* Limit the maximum size */
+        max-height: 200px; /* Limit the maximum size */
+        right: 0; /* Center the image horizontally */
+        top: auto; /* Remove the top position to let it flow naturally */
+        transform: none; /* Remove translateY to allow natural flow */
+    }
+
+    .content {
+        text-align: center; /* Center the text for better readability */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-img {
+        width: 60vw;  /* Make the image take up more width on very small screens */
+        height: 60vw;
+        max-width: 180px; /* Further limit the size */
+        max-height: 180px;
+    }
+}
+
 
 
 #services .services {
@@ -296,11 +358,12 @@ img {
 
 #services .service-bottom {
     display: flex;
-    align-items: center;
+    align-items: stretch; /* Stretch items to have the same height */
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
 }
+
 
 #services .service-item {
     flex-basis: 80%;
